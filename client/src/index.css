@@ -33,6 +33,7 @@
 .chatContainer {
   width: 72%;
   height: 100vh;
+  align-items: center;
 }
 
 .group {
@@ -52,7 +53,11 @@
 .onlineContainer {
   height: 28rem;
   overflow: hidden;
-  overflow-y: auto;
+  overflow: auto;
+}
+
+.users {
+  width: 85%;
 }
 
 .onlineHeading {
@@ -155,7 +160,6 @@
   .chatContainer {
     width: 100%;
     height: 80vh;
-    margin-top: 10rem;
     padding-right: 10rem;
   }
 

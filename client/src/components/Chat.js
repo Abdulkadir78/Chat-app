@@ -16,7 +16,8 @@ function Chat({ location }) {
   const [message, setMessage] = useState("");
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
-  const ENDPOINT = "https://react-chatting-app-1.herokuapp.com/";
+  // const ENDPOINT = "https://react-chatting-app-1.herokuapp.com/";
+  const ENDPOINT = "localhost:5000";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -47,8 +48,8 @@ function Chat({ location }) {
 
   return !error ? (
     <>
-      <div className="chatContainer d-flex justify-content-around">
-        <div className="chatBox mt-5 d-flex flex-column">
+      <div className="chatContainer d-flex">
+        <div className="chatBox d-flex flex-column">
           <ChatBoxHead room={room} />
 
           <Messages messages={messages} name={name} />
@@ -60,7 +61,7 @@ function Chat({ location }) {
           />
         </div>
 
-        <div className="onlineUsers mt-5 ml-5 d-none">
+        <div className="onlineUsers ml-5 d-none">
           <OnlineUsers users={users} room={room} />
         </div>
       </div>

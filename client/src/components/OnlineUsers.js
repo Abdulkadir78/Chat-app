@@ -1,7 +1,7 @@
 import React from "react";
 import { FaSignal } from "react-icons/fa";
 
-function OnlineUsers({ users, room }) {
+function OnlineUsers({ users }) {
   return (
     <>
       <div className="d-flex bg-dark mb-3 onlineHeading">
@@ -14,7 +14,7 @@ function OnlineUsers({ users, room }) {
         {users.map((user) => (
           <div key={user.id} className="d-flex">
             <div className="bg-success mt-3 ml-4 mr-2 onlineIcon"></div>
-            <span className="h4 font-weight-normal">{user.name}</span>
+            <span className="h4 font-weight-normal users pr-3">{user.name}</span>
           </div>
         ))}
       </div>
