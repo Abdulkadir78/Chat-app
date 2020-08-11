@@ -1,0 +1,165 @@
+.marginTop {
+  margin-top: 3rem;
+}
+
+.mainBtnGlobal {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 2.1rem 0;
+}
+
+.mainBtnRooms {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.formInput {
+  height: 3rem;
+  font-size: 20px;
+}
+
+.formInput:focus {
+  outline-color: #343a40;
+}
+
+.chatBox {
+  width: 50%;
+  height: 70%;
+  border: 1px #343a40 solid;
+  border-radius: 8px;
+  margin-left: 10rem;
+}
+
+.chatContainer {
+  width: 72%;
+  height: 100vh;
+}
+
+.group {
+  width: 100%;
+  border: 10px #343a40 solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.onlineUsers {
+  width: 30%;
+  height: 33rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.onlineContainer {
+  height: 28rem;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.onlineHeading {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.onlineIcon {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.messageBox {
+  background: #f3f3f3;
+  border-radius: 20px;
+  color: white;
+  max-width: 80%;
+}
+
+.messages {
+  flex: auto;
+  overflow: auto;
+}
+
+#message {
+  border: none;
+  width: 75%;
+  font-size: 1.2rem;
+}
+
+#message:focus {
+  outline: none;
+}
+
+.sendBtn {
+  text-transform: uppercase;
+  padding: 21px;
+  width: 25%;
+  transition: 0.2s;
+  border-bottom: 3px #343a40 solid;
+  border-bottom-right-radius: 5px;
+}
+
+.sendBtn:active {
+  transform: scale(0.9);
+}
+
+.sendBtn:focus {
+  outline: none;
+}
+
+.messageText {
+  width: 100%;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+}
+
+.time {
+  font-size: 14px;
+}
+
+.error {
+  margin-top: 12rem;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .marginTop {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .chatContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .chatBox {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    margin: 0 !important;
+  }
+
+  .group {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .onlineUsers {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .chatContainer {
+    width: 100%;
+    height: 80vh;
+    margin-top: 10rem;
+    padding-right: 10rem;
+  }
+
+  .chatBox {
+    width: 90%;
+  }
+}
